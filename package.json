@@ -1,0 +1,26 @@
+{
+  "name": "to-do-app",
+  "version": "1.0.0",
+  "description": "to do list application in JavaScript tested with Jasmine",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goformarty/to-do-app.git"
+  },
+  "keywords": [
+    "to-do",
+    "jasmine",
+    "javascript",
+    "event-handlers",
+    "dom-manipulation"
+  ],
+  "author": "Marty Stepien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goformarty/to-do-app/issues"
+  },
+  "homepage": "https://github.com/goformarty/to-do-app#readme"
+}
