@@ -260,11 +260,13 @@ ul.todo#completed:before {
 	margin: 0 0 0 -75px;
 }
 
+/* if the todo  list is empty */
 ul.todo#todo:empty:after {
   content: 'You have nothing to-do!';
   margin: 15px 0 0 0;
 }
 
+/* if the completed list is empty */
 ul.todo#completed:empty:after {
   content: 'You have yet to complete any tasks.';
 }
