@@ -12,11 +12,21 @@ document.getElementById('add').addEventListener('click', function(){
 	// if the value is not empty
 	if (value) {
 		addItemTodo(value);
-		// clear the input field for entereing new task
+		// clear the input field for entereing a new task
 		document.getElementById('item').value = '';
 	}	
 
 });
+
+
+// function to remove item from the list
+function removeItem() {
+	// get to the list item from button
+	// console.log(this.parentNode.parentNode);
+	var item = this.parentNode.parentNode;
+	var parent = item.parentNode;
+	parent.removeChild(item);
+}
 
 function addItemTodo(text) {
 	var list = document.getElementById('todo');
@@ -30,6 +40,9 @@ function addItemTodo(text) {
 	var remove = document.createElement('button');
 	remove.classList.add('remove');
 	remove.innerHTML = removeSVG;
+
+	// click event for removing item
+	remove.addEventListener('click', removeItem);
 
 	var complete = document.createElement('button');
 	complete.classList.add('complete');
