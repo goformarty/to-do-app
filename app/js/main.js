@@ -12,7 +12,10 @@ document.getElementById('add').addEventListener('click', function(){
 	// if the value is not empty
 	if (value) {
 		addItemTodo(value);
+		// clear the input field for entereing new task
+		document.getElementById('item').value = '';
 	}	
+
 });
 
 function addItemTodo(text) {
@@ -35,6 +38,8 @@ function addItemTodo(text) {
 	buttons.appendChild(remove);
 	buttons.appendChild(complete);
 	item.appendChild(buttons);
+
+	//  insert new tasks as first on the list
 	list.insertBefore(item, list.childNodes[0]);
 
 }
