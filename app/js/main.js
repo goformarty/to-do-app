@@ -35,6 +35,6 @@ function addItemTodo(text) {
 	buttons.appendChild(remove);
 	buttons.appendChild(complete);
 	item.appendChild(buttons);
-	list.appendChild(item);
+	list.insertBefore(item, list.childNodes[0]);
 
 }
