@@ -268,7 +268,7 @@ ul.todo#todo:empty:after {
 
 /* if the completed list is empty */
 ul.todo#completed:empty:after {
-  content: 'You have yet to complete any tasks.';
+  content: 'You haven\'t completed any tasks yet.';
 }
 
 ul.todo#todo:after,

@@ -25,8 +25,16 @@ function removeItem() {
 	// console.log(this.parentNode.parentNode);
 	var item = this.parentNode.parentNode;
 	var parent = item.parentNode;
-	parent.removeChild(item);
+	var answer = confirm("Do you want to delete?");
+	if (answer) {
+		parent.removeChild(item);
+	}
+	// var answer = prompt("Do you want to delete? y/n");
+	// if (answer === "y" || answer === "yes") {
+	// 	parent.removeChild(item);
+	// }
 }
+
 
 // function to complete/uncomplete item on both todo and completed lists
 function completeItem() {
@@ -81,5 +89,4 @@ function addItemTodo(text) {
 
 	//  insert new tasks as first on the list
 	list.insertBefore(item, list.childNodes[0]);
-
 }
